@@ -5,11 +5,8 @@ import { Squares } from "./components/ui/squares-background";
 function App() {
   return (
     <div className="min-h-screen w-full bg-neutral-950 relative">
-   
-
       <div className="relative z-10 min-h-screen overflow-auto w-full">
         <div className="flex flex-col items-center gap-4 h-screen pt-12">
-          
           <div className="absolute h-full w-full top-0">
             <div className=" h-full w-full rounded-lg overflow-hidden bg-[#060606]">
               <Squares
@@ -19,9 +16,8 @@ function App() {
                 borderColor="#2471a360"
                 hoverFillColor="#4AA3A260"
               />
-            
             </div>
-          </div>       
+          </div>
 
           <Avatar className="h-[120px] sm:h-[150px] md:h-[150px] mb-3 relative hover:scale-110">
             {/* changer l'url pour changer l'icone à gauche */}
@@ -44,7 +40,6 @@ function App() {
 
           {/* changer le contenu de la <span>TON CONTENU</span> pour changer le texte */}
 
-          
           <button
             /* changer l'url pour changer la cible du lien */
             onClick={() => window.open("https://threema.ch/fr", "_blank")}
@@ -67,7 +62,7 @@ function App() {
                 height="32"
                 viewBox="0 0 24 24"
                 width="32"
-                xmlns="http://www.w3.org/2000/svg"
+                xmlns="https://www.linkedin.com/in/grégory-poupaux-270622328"
                 className="transition-transform duration-300 group-hover:translate-x-5"
               >
                 <path
@@ -83,7 +78,12 @@ function App() {
           </button>
           <button
             /* changer l'url pour changer la cible du lien */
-            onClick={() => window.open("https://threema.ch/fr", "_blank")}
+            onClick={() =>
+              window.open(
+                "https://misterpoy.github.io/GregDev-PortFolio/",
+                "_blank"
+              )
+            }
             className="hover-button w-[85%] sm:w-[70%] md:w-[50%] lg:w-1/3 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block"
           >
             <span className="absolute inset-0 overflow-hidden rounded-full">
@@ -140,7 +140,7 @@ function App() {
                 height="32"
                 viewBox="0 0 24 24"
                 width="32"
-                xmlns="http://www.w3.org/2000/svg"
+                xmlns="https://github.com/MisterPoy"
                 className="transition-transform duration-300 group-hover:translate-x-5"
               >
                 <path
@@ -156,7 +156,9 @@ function App() {
           </button>
           <button
             /* changer l'url pour changer la cible du lien */
-            onClick={() => window.open("https://threema.ch/fr", "_blank")}
+            onClick={() =>
+              window.open("mailto:gregory.poupaux@hotmail.fr", "_blank")
+            }
             className="hover-button w-[85%] sm:w-[70%] md:w-[50%] lg:w-1/3 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block"
           >
             <span className="absolute inset-0 overflow-hidden rounded-full">
@@ -196,7 +198,6 @@ function App() {
           <div className="flex gap-8 mt-6">
             {/* changer les url pour changer les icones en bas, duplication possible ils resteraont centrer avec le 
             même espace entre eux */}
-            
           </div>
         </div>
       </div>
