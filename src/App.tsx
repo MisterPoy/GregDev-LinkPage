@@ -29,7 +29,7 @@ function App() {
           </Avatar>
 
           <h1 className="text-white mb-2 text-4xl relative font-doto">
-            Poupaux Grégory
+            Grégory Poupaux
           </h1>
           <h2 className="text-white text-xl relative ">
             Développeur Front-End
