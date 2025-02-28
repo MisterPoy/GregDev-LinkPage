@@ -1,50 +1,63 @@
-# React + TypeScript + Vite
+# GregDev-LinkTree
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**GregDev-LinkTree** est une application web développée avec **React.js** et **TailwindCSS**, inspirée du concept de Linktree. Ce projet permet de centraliser plusieurs liens dans une interface simple, élégante et responsive. Il intègre également des composants personnalisés issus de la bibliothèque **ShadCN UI**, adaptés pour répondre aux besoins spécifiques du design.
 
-Currently, two official plugins are available:
+## 🚀 Fonctionnalités
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Ajout et gestion de liens personnalisés.
+- Interface utilisateur moderne et minimaliste, basée sur des composants **ShadCN UI** personnalisés.
+- Design responsive pour une utilisation optimale sur tous les appareils.
+- Déploiement rapide via Netlify.
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies utilisées
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React.js** : Framework JavaScript pour le développement d'interfaces utilisateur.
+- **TailwindCSS** : Framework CSS utilitaire pour un design rapide et réactif.
+- **ShadCN UI** : Bibliothèque de composants React, utilisés et adaptés pour créer une interface unique.
+- **Netlify** : Plateforme de déploiement pour héberger l'application.
 
-- Configure the top-level `parserOptions` property like this:
+## 📂 Structure du projet
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```
+src/
+├── components/        # Composants réutilisables (dont ShadCN UI personnalisés)
+├── pages/             # Pages principales
+├── styles/            # Fichiers de style (CSS/Tailwind)
+├── utils/             # Fonctions utilitaires
+└── App.js             # Point d'entrée principal
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🌐 Démo en ligne
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Découvrez l'application ici : [GregDev-LinkTree](https://gregdev-linktree.netlify.app/)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 📖 Installation locale
+
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/MisterPoy/GregDev-LinkTree.git
+   ```
+2. Accédez au répertoire du projet :
+   ```bash
+   cd GregDev-LinkTree
+   ```
+3. Installez les dépendances :
+   ```bash
+   npm install
+   ```
+4. Lancez l'application en mode développement :
+   ```bash
+   npm start
+   ```
+
+L'application sera accessible sur `http://localhost:3000`.
+
+## ✨ Personnalisation avec ShadCN UI
+
+Les composants utilisés dans ce projet proviennent de la bibliothèque **ShadCN UI**, reconnue pour sa flexibilité et son intégration fluide avec React.js et TailwindCSS. Chaque composant a été personnalisé pour s'adapter au design souhaité, tout en respectant les principes d'accessibilité et de performance.
+
+## 📝 Auteur
+
+Créé par **GregDev**. N'hésitez pas à me contacter pour toute question ou suggestion d'amélioration.
+
+---
